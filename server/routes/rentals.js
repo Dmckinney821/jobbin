@@ -4,11 +4,13 @@ const router = express.Router();
 const Rental = require('../models/rental')
 
 
-router.get('', (req, res) => {
-    Rental.find({}, (err, foundRentals) => {
-        res.json(foundRentals)
-    })
-})
+router.get('', function (req, res) {
+    Rental.find({}, function (err, foundRentals) {
+        if (err){  
+        }
+        return res.json(foundRentals)
+    });
+});
 
 router.get('/:id', (req, res) => {
     const rentalId = req.params.id
