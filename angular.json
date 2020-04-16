@@ -25,7 +25,8 @@
             ],
             "styles": [
               {
-                "input": "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+                "input": "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+                "input": "./node_modules/font-awesome/dist/css/font-awesome.min.css"
               },
               "src/styles.scss"
             ],
