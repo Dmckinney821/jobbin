@@ -9,7 +9,7 @@ import {MapService} from './map.service'
 export class MapComponent {
 
   @Input() location: string;
-  isPostioneError: boolean = false;
+  isPositionError: boolean = false;
 
   lat: number = 51.678418;
   lng: number = 7.808007;
@@ -25,7 +25,7 @@ export class MapComponent {
         this.lng = coordinates.lng;
         this.ref.detectChanges();
       }, () => {
-        this.isPostioneError = true
+        this.isPositionError = true
       })
   }
 
