@@ -1,25 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-@import '../src//styles/variables';
 
-html, body, p {
-    color: $main-text-color
-}
-
-.apartment {
-    color: #a72da3;
-}
-
-.condo {
-    color: #d68000;
-}
-
-.house {
-    color: #bf1818;
-}
-
-.clickable {
-  cursor: pointer;
-}
+@import '../../../../src/styles/variables';
 
 .bwm-form {
     color: $main-text-color;
