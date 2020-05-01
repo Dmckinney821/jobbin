@@ -21,6 +21,11 @@
   padding: 20px;
   border: 1px solid $light-gray-color;
 
+  .should-login {
+    text-emphasis: center;
+    margin-bottom: 10px;
+    
+  }
   .btn-confirm {
     background-color: #FF5A5F;
     font-size: 17px;

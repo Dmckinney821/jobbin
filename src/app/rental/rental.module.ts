@@ -19,6 +19,8 @@ import { AuthGuard } from '../auth/shared/auth.guard';
 import { RentailDetailBookingComponent } from './rental-detail/rentail-detail-booking/rentail-detail-booking.component'
 import { HelperService } from '../common/service/helper.service'
 import { AppComponent } from '../app.component';
+import { RentalSearchComponent } from './rental-search/rental-search.component';
+import { RentalCreateComponent } from './rental-create/rental-create.component';
 
 
 
@@ -27,7 +29,9 @@ const routes: Routes = [
     component: RentalComponent,
     children: [
         { path: '', component: RentalListComponent },
-        { path: ':rentalId', component: RentalDetailComponent, canActivate: [AuthGuard] }
+        { path: 'new', component: RentalCreateComponent, canActivate: [AuthGuard] },
+        { path: ':rentalId', component: RentalDetailComponent },
+        { path: ':city/homes', component: RentalSearchComponent }
     ]}
   ]
 
@@ -38,7 +42,9 @@ const routes: Routes = [
         RentalComponent,
         RentalDetailComponent,
         UppercasePipe,
-        RentailDetailBookingComponent
+        RentailDetailBookingComponent,
+        RentalSearchComponent,
+        RentalCreateComponent
   
     ],
     imports: [
